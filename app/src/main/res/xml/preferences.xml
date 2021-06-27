@@ -1,0 +1,22 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="remember"
+        android:summary="Indique si les identifiants sont sauvegardés par defaut"
+        android:title="Save Preferences" />
+
+    <MultiSelectListPreference
+        android:defaultValue="@array/reply_entries"
+        android:entries="@array/reply_entries"
+        android:entryValues="@array/reply_entries"
+        android:key="Usernames"
+        android:title="Usernames" />
+
+    <EditTextPreference
+        android:summary="Url pour l'api"
+        android:key="URL"
+        android:title="API URL:" />
+
+
+</PreferenceScreen>

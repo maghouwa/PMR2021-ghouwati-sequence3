@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MainActivity</string>
+    <string name="confirm_button">OK</string>
+    <string name="login_button">LOG IN</string>
+    <string name="edit_text_hint">Pseudo</string>
+    <string name="password_text_hint">Password</string>
+    <string name="choix_list_name">ChoixListActivity</string>
+    <string name="show_list_name">ShowListActivity</string>
+    <string name="settings_name">SettingsActivity</string>
+    <string name="new_list">Nouvelle Liste</string>
+    <string name="new_item">Nouvel Item</string>
+    <string name="no_wifi">No Wifi !!</string>
+    <string name="no_wifi_icon">No wifi Icon</string>
+    <string name="wifi_check_continue">Retry</string>
+    <string name="continue_without_internet">Continue w/o internet</string>
+    <string name="please_wait">Please wait.</string>
+    <string name="new_user">new user..</string>
+    <string name="create_new_user">create</string>
+</resources>

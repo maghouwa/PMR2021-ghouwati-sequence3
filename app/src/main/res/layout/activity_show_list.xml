@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ShowListActivity">
+
+    <include layout="@layout/show_list_toolbar"
+        android:id="@+id/show_task_bar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_list"
+        app:layout_constraintTop_toBottomOf="@+id/show_task_bar"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:nestedScrollingEnabled="true"/>
+
+    <EditText
+        android:id="@+id/show_field"
+        android:layout_width="327dp"
+        android:layout_height="44dp"
+        android:hint="@string/new_item"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/show_list_confirm_button"
+        android:layout_width="73dp"
+        android:layout_height="36dp"
+        android:text="@string/confirm_button"
+        app:layout_constraintStart_toEndOf="@+id/show_field"
+        app:layout_constraintTop_toTopOf="@+id/show_field" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
