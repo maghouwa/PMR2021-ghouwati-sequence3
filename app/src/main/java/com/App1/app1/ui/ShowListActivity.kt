@@ -33,7 +33,7 @@ class ShowListActivity : AppCompatActivity() {
 
         var apiHandler: APIHandler? = null
         if (isConnected == true){
-            val apiHandler = APIHandler(baseUrl = baseUrl, hashToken = hashToken)
+            apiHandler = APIHandler(baseUrl = baseUrl, hashToken = hashToken)
             val fetchedItems = apiHandler.getListeItems(idListe = listeRemoteId!!)!!.mesItems
             mShowListViewHolder.addItems(
                 items = fetchedItems,
